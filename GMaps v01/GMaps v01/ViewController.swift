@@ -22,7 +22,7 @@ class ViewController: UIViewController {
             
             
             //google apikey
-            GMSServices.provideAPIKey("AIzaSyDGbkt2gdIj0yysy-4_uUheQQBJM27f3Zw")
+            GMSServices.provideAPIKey("")
             //posicion en el mapa"desde el movil"
             let camera = GMSCameraPosition.camera(withLatitude: 42.851459, longitude: -2.669506, zoom: 10)
             //que el mapa la encuentre

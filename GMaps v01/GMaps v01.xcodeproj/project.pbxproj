@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9AE06898946CEB85F836E7FA /* libPods-GMaps v01.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FB58CC6B9F8AA45DF531AC /* libPods-GMaps v01.a */; };
+		FF64E5A71E37EAEA00C245AA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF64E5A61E37EAEA00C245AA /* SecondViewController.swift */; };
+		FF64E5A91E37EE1900C245AA /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF64E5A81E37EE1900C245AA /* ThirdViewController.swift */; };
 		FFDF99371E2E9A8700FD8C23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDF99361E2E9A8700FD8C23 /* AppDelegate.swift */; };
 		FFDF99391E2E9A8700FD8C23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDF99381E2E9A8700FD8C23 /* ViewController.swift */; };
 		FFDF993C1E2E9A8700FD8C23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDF993A1E2E9A8700FD8C23 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 		4E5F1B97E1944FF4EC5F69D2 /* Pods-GMaps v01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMaps v01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GMaps v01/Pods-GMaps v01.debug.xcconfig"; sourceTree = "<group>"; };
 		A8FB58CC6B9F8AA45DF531AC /* libPods-GMaps v01.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GMaps v01.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73E51CF67F941D12A8326C6 /* Pods-GMaps v01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMaps v01.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMaps v01/Pods-GMaps v01.release.xcconfig"; sourceTree = "<group>"; };
+		FF64E5A61E37EAEA00C245AA /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FF64E5A81E37EE1900C245AA /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		FFDF99331E2E9A8700FD8C23 /* GMaps v01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GMaps v01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDF99361E2E9A8700FD8C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFDF99381E2E9A8700FD8C23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				FFDF993D1E2E9A8700FD8C23 /* Assets.xcassets */,
 				FFDF993F1E2E9A8700FD8C23 /* LaunchScreen.storyboard */,
 				FFDF99421E2E9A8700FD8C23 /* Info.plist */,
+				FF64E5A61E37EAEA00C245AA /* SecondViewController.swift */,
+				FF64E5A81E37EE1900C245AA /* ThirdViewController.swift */,
 			);
 			path = "GMaps v01";
 			sourceTree = "<group>";
@@ -211,7 +217,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF64E5A71E37EAEA00C245AA /* SecondViewController.swift in Sources */,
 				FFDF99391E2E9A8700FD8C23 /* ViewController.swift in Sources */,
+				FF64E5A91E37EE1900C245AA /* ThirdViewController.swift in Sources */,
 				FFDF99371E2E9A8700FD8C23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +382,7 @@
 				FFDF99471E2E9A8700FD8C23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

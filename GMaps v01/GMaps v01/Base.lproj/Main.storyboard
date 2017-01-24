@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KvN-S8-N8b">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -25,32 +25,88 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-106" y="110"/>
+            <point key="canvasLocation" x="1716" y="71"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="u7b-r5-j3e">
+        <!--Second View Controller-->
+        <scene sceneID="CNK-7p-iQd">
             <objects>
-                <viewController id="3pk-qv-8z6" sceneMemberID="viewController">
+                <viewController id="KvN-S8-N8b" customClass="SecondViewController" customModule="GMaps_v01" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YsD-du-72x"/>
-                        <viewControllerLayoutGuide type="bottom" id="8CC-6W-W6b"/>
+                        <viewControllerLayoutGuide type="top" id="qVk-Wp-8tf"/>
+                        <viewControllerLayoutGuide type="bottom" id="3o8-Wi-3PE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="f5a-SS-CoE">
+                    <view key="view" contentMode="scaleToFill" id="t0J-C3-6wN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oQ-9q-S8s">
-                                <rect key="frame" x="214" y="368" width="46" height="30"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1zp-Km-k90">
+                                <rect key="frame" x="0.0" y="28" width="375" height="318"/>
+                                <connections>
+                                    <segue destination="UhX-me-7TE" kind="embed" id="X1C-j8-8KO"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGd-YQ-mEh">
+                                <rect key="frame" x="47" y="588" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="StartButton:" destination="KvN-S8-N8b" eventType="touchUpInside" id="9wC-ef-UFC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybX-9n-Zm9">
+                                <rect key="frame" x="286" y="588" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="StopButton:" destination="KvN-S8-N8b" eventType="touchUpInside" id="el8-V4-FF2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v03-Mj-IW4">
+                                <rect key="frame" x="158" y="439" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCx-D0-ht2">
+                                <rect key="frame" x="158" y="588" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="PauseButton:" destination="KvN-S8-N8b" eventType="touchUpInside" id="feC-W7-8fE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1zp-Km-k90" firstAttribute="leading" secondItem="t0J-C3-6wN" secondAttribute="leading" id="5R0-Xn-X9C"/>
+                            <constraint firstItem="3o8-Wi-3PE" firstAttribute="top" secondItem="1zp-Km-k90" secondAttribute="bottom" constant="321" id="KmW-v4-ADh"/>
+                            <constraint firstAttribute="trailing" secondItem="1zp-Km-k90" secondAttribute="trailing" id="Oav-D8-7EB"/>
+                            <constraint firstItem="1zp-Km-k90" firstAttribute="top" secondItem="qVk-Wp-8tf" secondAttribute="bottom" id="ZDN-PU-Rb3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ContainerMapa" destination="1zp-Km-k90" id="CDO-yo-aU0"/>
+                        <outlet property="TimerLabel" destination="v03-Mj-IW4" id="YdF-d8-B6a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dnr-Ry-Rw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592.79999999999995" y="76.911544227886068"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="WVt-Sm-Ssu">
+            <objects>
+                <viewController id="UhX-me-7TE" customClass="ThirdViewController" customModule="GMaps_v01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t9s-uV-APk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="318"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jz3-7g-4Z9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LBP-lJ-uxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="798" y="103"/>
+            <point key="canvasLocation" x="593" y="672"/>
         </scene>
     </scenes>
 </document>
